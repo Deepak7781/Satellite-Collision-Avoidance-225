@@ -35,7 +35,6 @@ idx = datefind(TCA, t);
 % Compute the miss distance at TCA
 missDistanceAfterManeuver = range(idx);
 
-% Printing the results
-fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
+fprintf("Time of Closest Aprroach (TCA) :", )
 fprintf("Before maneuver the miss distance at TCA : %.3f km\n", missDistanceBeforeManeuver/1000);
 fprintf("After maneuver the miss distance at TCA : %.3f km\n", missDistanceAfterManeuver/1000);
