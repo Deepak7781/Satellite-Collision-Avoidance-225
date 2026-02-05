@@ -10,9 +10,9 @@ YPSAT = createSat(scenario, mission);
 
 debris = createDebris(scenario, tle_file);
 
-[windows, minRange] = detect_conjunctions(YPSAT, debris);
+[tca, minRange] = detect_conjunctions(YPSAT, debris);
 
-disp(windows);
+disp(tca);
 disp(minRange);
 
 play(scenario)
