@@ -17,7 +17,7 @@ YPSAT (Yield and Planning Satellite)
 
 ## Mission Definition
 
-#### Epoch : March 21 2025, 12:00:00 AM
+#### Epoch : December 21 2025, 12:00:00 AM
 ### Orbit Type
 
 - Sun-Synchronous Orbit (SSO)
@@ -63,7 +63,7 @@ Where:
 
 ##### Determination of RAAN of Sun on our epoch
 
-On March 21, Sun is at vernal equinox so $\alpha_{⊙} = 0\degree$
+On December 21, we assume (for project convenience) Sun is at vernal equinox so $\alpha_{⊙} = 0\degree$
 
 $$
 \Omega = 0\degree + 15\degree \times (10.5 - 12)
@@ -81,7 +81,7 @@ $$
 
 #### Argument of Perigee : $0\degree$
 
-#### True Anomaly : $0\degree$
+#### True Anomaly : $180\degree$
 
 ---
 
