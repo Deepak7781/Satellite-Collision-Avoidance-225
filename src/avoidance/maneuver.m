@@ -6,6 +6,8 @@ function keplerianElements = maneuver(pos, velocity)
      
     velocity_maneuver = velocity + detaV*vhat;
 
-    keplerianElements = ijk2keplerian(pos, velocity_maneuver);
+    [a, incl, ecc, RAAN, argp, nu] = ijk2keplerian(pos, velocity_maneuver);
+
+    keplerianElements = [a, incl, ecc, RAAN, argp, nu];
 
 end
