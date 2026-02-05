@@ -11,13 +11,32 @@ As more and more satellites are added to low Earth orbit, the probability of col
 [Project description link](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub/wiki#instructions-for-project-solution-submission)
 
 
-# Project details
+## Project details
 
-## Collision Avoidance Strategy
+### Collision Avoidance Strategy
 
 A track-along (in-track) $\Delta V$ maneuver is employed in this project.
 
-# How to run section
+- The maneuver is applied along the instantaneous velocity direction
+- Executed hours before the predicted Time of Closest Aproach (TCA)
+- Causes a phase shift in the satellite's orbit
+- Results in an increased searation distance at TCA
+
+The avoidance logic is purely distance-based,
+- No probability-of-collision model is used
+- The maneuver objective is to increase miss distance.
+
+### Software Requirements
+
+To run this project, the following MATLAB roducts are required:
+
+#### Required Toolbox
+
+- MATLAB (R2022b or later recommended)
+- Aerospace Toolbox
+- Financial Toolbox
+
+# How to run the project
 Please explain step by step how to run the code/model and include information about what toolboxes and other resources needed to run it.
 
 # Demo/Results
