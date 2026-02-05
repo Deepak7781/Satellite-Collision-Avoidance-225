@@ -12,7 +12,7 @@ As more and more satellites are added to low Earth orbit, the probability of col
 
 
 # Project details
-A description of the implementation and the approached adopted.
+A basic approach of track-along $\Delta V$ maneuver is used here. 
 
 # How to run section
 Please explain step by step how to run the code/model and include information about what toolboxes and other resources needed to run it.
