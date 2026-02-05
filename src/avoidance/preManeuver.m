@@ -1,5 +1,5 @@
 
-function [pos, velocity, maneuverStartTime, missDistance] = preManeuver(tle_file)
+function [pos, velocity, maneuverStartTime, missDistance, tca] = preManeuver(tle_file)
 
     mission = mission_definition();
         
