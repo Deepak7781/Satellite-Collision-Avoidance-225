@@ -1,7 +1,7 @@
 function mission = mission_definition()
 
-mission.startDate = datetime(2025, 3, 21, 12, 0, 0);
-mission.endDate = datetime(2025, 3, 28, 12, 0, 0);
+mission.startDate = datetime(2025, 12, 21);
+mission.endDate = datetime(2025, 12, 28);
 mission.duration = mission.endDate - mission.startDate;
 
 mission.durationInDays = days(mission.duration);
@@ -18,6 +18,6 @@ mission.orbitVelocity = (2 * pi * (mission.orbitAltitude + 6371)) / mission.orbi
 
 mission.RAAN = 337.5; % Right Ascension of Ascending Node in degrees
 mission.argumentOfPerigee = 0;
-mission.trueAnomaly = 0; 
+mission.trueAnomaly = 180; 
 
 end
