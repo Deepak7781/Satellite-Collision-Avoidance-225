@@ -14,7 +14,7 @@ function [pos, velocity, maneuverStartTime, missDistance, tca] = preManeuver(tle
     if isRequired
         fprintf("Avoidance Maneuver is Required\n");
         maneuverStartTime = tca - minutes(30);
-        [pos, velocity] = states(YPSAT, maneuverTime, "CoordinateFrame","inertial");
+        [pos, velocity] = states(YPSAT, maneuverStartTime, "CoordinateFrame","inertial");
     end
     
 end
