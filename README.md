@@ -1,6 +1,6 @@
 # Solution to MATLAB and Simulink Challenge project 225 -Satellite Collision Avoidance
 
-### Problem Statement
+## Problem Statement
 
 The satellite industry is experiencing unprecedented growth, with new companies launching record numbers of satellites transforming global communication, providing near real-time images of our planet, and even enabling commercial space tourism.
 
@@ -12,7 +12,10 @@ As more and more satellites are added to low Earth orbit, the probability of col
 
 
 # Project details
-A basic approach of track-along $\Delta V$ maneuver is used here. 
+
+## Collision Avoidance Strategy
+
+A track-along (in-track) $\Delta V$ maneuver is employed in this project.
 
 # How to run section
 Please explain step by step how to run the code/model and include information about what toolboxes and other resources needed to run it.
