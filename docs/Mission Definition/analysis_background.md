@@ -12,7 +12,7 @@ By December 2025, YPSAT is expected to be stabilized in its designated low Earth
 
 ## Definition of Analysis Epoch
 
-To ensure stable orbital parameters and reliable satte estimation, a short post-commisioning period is allocated before initiating conjuction analysis operations. The eopch for conjuction analysis is defined as 21 March 2025, marking the formal start of collision assessment activities.
+To ensure stable orbital parameters and reliable satte estimation, a short post-commisioning period is allocated before initiating conjuction analysis operations. The eopch for conjuction analysis is defined as 21 December 2025, marking the formal start of collision assessment activities.
 
 
 All orbital sate vectors, propagation, and conjuction evaluations in this study are referenced to this epoch unless otherwise stated.
