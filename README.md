@@ -36,8 +36,64 @@ To run this project, the following MATLAB roducts are required:
 - Aerospace Toolbox
 - Financial Toolbox
 
+## Repositary Structure
+
+```text
+Satellite-Collision-Avoidance-225/
+├── LICENSE
+├── README.md
+├── project_plan.md
+├── run.m
+│
+├── data/
+│   └── debris/
+│       ├── debris_data.md
+│       └── iridium33_deb.tle
+│
+├── docs/
+│   ├── Avoidance Maneuver/
+│   │   └── avoidanceManeuver.md
+│   │
+│   ├── Mission Definition/
+│   │   ├── analysis_background.md
+│   │   ├── mission_definition.md
+│   │   └── problem_statement.md
+│   │
+│   └── Books/
+│       ├── CA_Handbook_CM.pdf
+│       ├── Fundamentals of AstroDynamics_Bate,Muller and White.pdf
+│       └── Orbital Mechanics for Engineering Students.pdf
+│
+├── results/
+│   ├── Compare_Maneuvers.png
+│   └── Compare_before_and_after_maneuver.mp4
+│
+└── src/
+    ├── avoidance/
+    │   ├── maneuver.m
+    │   ├── plan_avoidance_maneuver.m
+    |   ├── postManeuver.m
+    │   └── preManeuver.m
+    │
+    ├── conjunction/
+    │   ├── conjunction_assessment.m
+    │   └── detect_conjunctions.m
+    │
+    ├── propagation/
+    │   ├── debris_propagation_sgp4.m
+    │   └── satellite_propagation.m
+    │
+    └── utils/
+        ├── createDebris.m
+        ├── createSat.m
+        ├── createScenario.m
+        └── mission_definition.m
+```
+
+
 # How to run the project
-Please explain step by step how to run the code/model and include information about what toolboxes and other resources needed to run it.
+
+To run the whole project, a main file has been created named **run.m** which is in the top level of the repositary
 
 # Demo/Results
 Add a video or animated gif/picture to showcase the code in operation and/or the expected results.
