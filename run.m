@@ -6,10 +6,10 @@ addpath('data\debris\');
 
 
 debrisFile = 'data/debris/iridium33_deb.tle';
-
+[pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = preManeuver(debrisFile);
 missDistanceAfterManeuver = postManeuver(debrisFile);
 
 % Printing the results
-%fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
-%fprintf("Before maneuver the miss distance at TCA : %.3f km\n", missDistanceBeforeManeuver/1000);
+fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
+fprintf("Before maneuver the miss distance at TCA : %.3f km\n", missDistanceBeforeManeuver/1000);
 fprintf("After maneuver the miss distance at TCA : %.3f km\n", missDistanceAfterManeuver/1000);
