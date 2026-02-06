@@ -1,7 +1,7 @@
 
-function missDistanceAfterManeuver = postManeuver(debrisFile)
+function [missDistanceAfterManeuver,pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = postManeuver(debrisFile)
     % Getting details before the maneuver
-    [pos, velocity, maneuverStartTime, ~, TCA] = preManeuver(debrisFile); 
+    [pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = preManeuver(debrisFile); 
     
     % Performing the maneuver
     keplerianElements = maneuver(pos, velocity);
