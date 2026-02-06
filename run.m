@@ -6,8 +6,8 @@ addpath('data\debris\');
 
 
 debrisFile = 'data/debris/iridium33_deb.tle';
-[pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = preManeuver(debrisFile);
-missDistanceAfterManeuver = postManeuver(debrisFile);
+
+ [missDistanceAfterManeuver,pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = postManeuver(debrisFile);
 
 % Printing the results
 fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
