@@ -189,7 +189,7 @@ Functions Used
 
 - `preManeuver.m`
 
-    The function `preManeuver` takes a debris tle file as input. It uses the `plan_avoidance_maneuver` function to check if a maeuver is required. The function also calculates the position and velocity of the satellite at the time of closest approach (tca - output from `plan_avoidance_maneuver`). The ouputs of the function are as follows:
+    The function `preManeuver` takes a debris tle file as input. It uses the `plan_avoidance_maneuver` function to check if a maeuver is required. The function also calculates the position and velocity of the satellite at maneuverStartTime. The ouputs of the function are as follows:
     - pos - Position of the satellite at maneuverStartTime
     - velocity - Velocity of the satellite at maneuverStartTime
     - maneuverStartTime - 30 minutes before the tca
@@ -197,28 +197,17 @@ Functions Used
 
 - `maneuver.m`
 
-    The function `maneuver` 
-
-Functions Used
-
-- `preManeuver.m`
-- `plan_avoidance_maneuver.m`
-- `maneuver.m`
-
-📂 `src/avoidance/`
-
-#### e) Post-Maneuver Propagation
-
-Re-propagates satellite orbit after maneuver and reassesses conjunction.
-
-Function Used
+    The function `maneuver` takes the position and velocity at maneuverStartTime and applies a $\Delta V$ maneuver, and calculates the keplerian elements for the new velocity obtained at the maneuverStartTime. It outputs keplerian elements for the pos and new velocity calculated
 
 - `postManeuver.m`
 
+    The function `postManeuver` starts at maneuverStartTime. It uses the keplerian elements to create a new satellite with these keplerian elements. It now propagates with new obit. Now again the calculation of missDistance at the same tca is calculated. This missDistanceAftermaneuver and missDistanceBefore maneuver is compared and if the later is greater, the avoidance maneuver has succeeded.
+
+
 📂 `src/avoidance/`
 
 
-5️⃣ Results Output
+#### Results Output
 
 ```matlab
 fprintf("Time of Closest Approach (TCA) : %s\n", TCA);
