@@ -41,3 +41,4 @@ Currently, there is no dedicated, low-cost, high-resolution Earth observation pl
 
 As a result, significant public expenditure continues to be directed toward post-disaster response rather than risk anticipation and mitigation.
 
+    Used ChatGPT for checking the realism of the problem statement
