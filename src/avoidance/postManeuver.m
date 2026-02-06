@@ -23,7 +23,7 @@ function [missDistanceAfterManeuver,pos, velocity, maneuverStartTime, missDistan
     maneuverScenario = satelliteScenario(maneuverStartTime, mission.endDate, 20);
     
     % Add the YPSAT
-    YPSAT_maneuver = satellite(maneuverScenario, a, ecc, incl, RAAN, argp, nu,'Name','YPSAT');
+    YPSAT_maneuver = satellite(maneuverScenario, a, ecc, incl, RAAN, argp, nu,'Name','YPSAT_maneuver');
     debris = satellite(maneuverScenario, debrisFile);
     
     % Compute Range
@@ -33,5 +33,5 @@ function [missDistanceAfterManeuver,pos, velocity, maneuverStartTime, missDistan
     idx = datefind(TCA, t);
     % Compute the miss distance at TCA
     missDistanceAfterManeuver = range(idx);
-
+    play(maneuverScenario);
 end
