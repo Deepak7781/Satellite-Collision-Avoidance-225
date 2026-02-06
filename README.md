@@ -235,7 +235,6 @@ run.m
 ```
 
 # Demo/Results
-Add a video or animated gif/picture to showcase the code in operation and/or the expected results.
+[![Collision Avoidance Simulation](results/Compare_Maneuvers.png)](results/Compare_before_and_after_maneuver.mp4)
+
   
-# Reference
-Add reference papers, data, or supporting material that has been used, if any.
