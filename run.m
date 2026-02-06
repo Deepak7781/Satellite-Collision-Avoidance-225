@@ -1,0 +1,12 @@
+addpath('src\avoidance\');
+addpath('src\conjunction\');
+addpath('src\propagation\');
+addpath('src\utils\');
+addpath('data\debris\');
+
+
+
+% Printing the results
+fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
+fprintf("Before maneuver the miss distance at TCA : %.3f km\n", missDistanceBeforeManeuver/1000);
+fprintf("After maneuver the miss distance at TCA : %.3f km\n", missDistanceAfterManeuver/1000);

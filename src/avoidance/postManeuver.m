@@ -1,8 +1,7 @@
 
-debrisFile = 'data/debris/iridium33_deb.tle';
-
+function missDistanceAfterManeuver = postManeuver(debrisFile)
 % Getting details before the maneuver
-[pos, velocity, maneuverStartTime, missDistanceBeforeManeuver, TCA] = preManeuver(debrisFile); 
+[pos, velocity, maneuverStartTime, ~, TCA] = preManeuver(debrisFile); 
 
 % Performing the maneuver
 keplerianElements = maneuver(pos, velocity);
@@ -35,7 +34,4 @@ idx = datefind(TCA, t);
 % Compute the miss distance at TCA
 missDistanceAfterManeuver = range(idx);
 
-% Printing the results
-fprintf("Time of Closest Aprroach (TCA) : %s\n", TCA);
-fprintf("Before maneuver the miss distance at TCA : %.3f km\n", missDistanceBeforeManeuver/1000);
-fprintf("After maneuver the miss distance at TCA : %.3f km\n", missDistanceAfterManeuver/1000);
+end
